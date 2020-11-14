@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://marnevanzyl:Awesomebees@popi-data.etjcf.mongodb.net/Popi-Act?retryWrites=true&w=majority",
+    "jwtSecret": "sl_myJwtSecret"
+}
