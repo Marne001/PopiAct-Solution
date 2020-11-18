@@ -7,7 +7,8 @@ import {
     Form,
     FormGroup,
     Label,
-    Input
+    Input,
+    Container
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
@@ -56,7 +57,7 @@ class ItemModal extends Component {
                     style={{marginBottom: '2rem'}}
                     onClick={this.toggle}
                 >
-                    Add Item
+                    Add Information
                 </Button> 
                 ) : ( 
                 <h4 className="mb-3 ml-4">Please log in to manage items</h4>

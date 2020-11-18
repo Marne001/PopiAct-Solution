@@ -3,7 +3,7 @@ import AppNavbar from './components/AppNavbar';
 import Information from './components/Information';
 import ItemModal from './components/ItemModal';
 import { Container } from 'reactstrap';
-import FileUpload from './components/FileUpload';
+
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -27,7 +27,6 @@ import './App.css';
           <AppNavbar/>
           <Container>
           <ItemModal/>
-          <FileUpload/>
           <Information/>
           </Container>
         </div>

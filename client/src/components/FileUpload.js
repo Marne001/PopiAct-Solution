@@ -3,8 +3,6 @@ import * as XLSX from 'xlsx';
 
 
 function FileUpload(){
-
-
     const[items, setItems] = useState([])
 
     const readExcel = (file) => {
@@ -46,6 +44,7 @@ function FileUpload(){
                 onChange={(e)=>{
                     const file = e.target.files[0];
                     readExcel(file)
+                    
             }}
           />
 
