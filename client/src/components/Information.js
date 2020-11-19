@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
 import PropTypes from 'prop-types';
 import FileUpload from '../components/FileUpload';
+import '../App.css';
 
 
 
@@ -36,7 +37,7 @@ class Information extends Component {
                                     
                                     <Button
                                     className="remove-btn"   
-                                    color="danger"
+                                    color="warning"
                                     size="sm"
                                     onClick={this.onDeleteClick.bind(this, _id)}
                                     >

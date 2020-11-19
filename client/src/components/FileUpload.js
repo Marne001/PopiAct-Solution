@@ -52,14 +52,25 @@ function FileUpload(){
         <thead>
             <tr>
             <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Adress</th>
+            <th scope="col">Cell</th>
+            <th scope="col">Race</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
             </tr>
         </thead>
         <tbody>
             {
                 items.map((d) => (
                     <tr key={d.Item}>
-                        <th>{d.Item}</th>
-                        <td>{d.ID}</td>
+                        <td>{d.Id}</td>
+                        <td>{d.Email}</td>
+                        <td>{d.Adress}</td>
+                        <td>{d.Cell}</td>
+                        <td>{d.Race}</td>
+                        <td>{d.Gender}</td>
+                        <td>{d.Age}</td>
                     </tr>
                 ))
             }
