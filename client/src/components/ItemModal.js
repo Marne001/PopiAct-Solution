@@ -52,26 +52,25 @@ class ItemModal extends Component {
         return(
             <div>
                 { this.props.isAuthenticated ?  (
-                <Button
-                    color="dark"
-                    style={{marginBottom: '2rem'}}
+                <Button className="item-button"
+                    outline color="secondary"
                     onClick={this.toggle}
                 >
                     Add Information
                 </Button> 
                 ) : ( 
-                <h4 className="mb-3 ml-4">Please log in to manage items</h4>
+                <h4 className="mb-3 ml-4">Log In To manage POPI-Information</h4>
                 )}
 
                 <Modal
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                 >
-                    <ModalHeader toggle={this.toggle}>Add To List</ModalHeader>
+                    <ModalHeader toggle={this.toggle}>Add To Database</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
-                                <Label for="item">Item</Label>
+                                <Label for="item">Information</Label>
                                 <Input
                                 type="text"
                                 name="name"
@@ -79,11 +78,11 @@ class ItemModal extends Component {
                                 placeholder="Add Item"
                                 onChange={this.onChange}
                                 />
-                                <Button
+                                <Button 
                                 color="dark"
                                 style={{marginTop: '2rem'}}
                                 block
-                                >Add Item</Button>
+                                >Add Information</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>

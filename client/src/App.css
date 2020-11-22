@@ -4,6 +4,7 @@
 
 .remove-btn{
     margin-right: 0.5rem;
+    color: #3c5d53;
 }
 
 .fade-enter {
@@ -26,4 +27,17 @@
 
 .information-list{
     padding-bottom: 20px;
+}
+
+.navbar{
+    background-color    :#174036;
+}
+
+.navbar-text{
+    color: seashell ;
+}
+
+.item-button{
+    margin-bottom: 2rem;
+
 }

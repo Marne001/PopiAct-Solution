@@ -30,14 +30,15 @@ class Information extends Component {
         return(
             <Container>
                 { this.props.isAuthenticated ? <ListGroup>
-                    <TransitionGroup className="information-list">
+                    <TransitionGroup className="information-list" >
+                        
                         {items.map(({_id, name}) => (
                             <CSSTransition key={_id} timeout={500} classNames="fade">
-                                <ListGroupItem>
+                                <ListGroupItem color="success">
                                     
                                     <Button
                                     className="remove-btn"   
-                                    color="warning"
+                                    outline color="secondary"
                                     size="sm"
                                     onClick={this.onDeleteClick.bind(this, _id)}
                                     >
